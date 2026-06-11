@@ -17,7 +17,6 @@ const BestSeller = () => {
         // after filteration we only want to show 5 Products.
         setBestSeller(bestProduct.slice(0, 5))
     }, [products])
-
     // console.log(products);
 
     return (
