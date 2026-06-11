@@ -17,6 +17,7 @@
 
 // ->Client-side routing means the browser changes what is displayed without requesting a completely new HTML page from the server.
 
+
 import { createRoot } from 'react-dom/client'
 import ReactDOM from 'react-dom/client'
 import './index.css'
@@ -33,9 +34,13 @@ import {BrowserRouter} from 'react-router-dom'
 // DOM → Works with the browser's Document Object Model (web pages)
 
 
+import ShopContextProvider from './context/ShopContext'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <App />
+    <ShopContextProvider>
+      <App />
+    </ShopContextProvider>
   </BrowserRouter>,
 )
 

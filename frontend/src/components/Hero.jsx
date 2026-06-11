@@ -1,3 +1,9 @@
+// this file is responsible for the hero section of the website, which is the first thing that users see when they visit the site. It is a large banner that typically contains a background image, a headline, and a call-to-action button. The hero section is designed to grab the user's attention and encourage them to explore the site further.
+
+// basically jisme ladki hai, wo hero section hai.
+
+// in this file we are using tailwind css to style the hero section. We are using flexbox to create a responsive layout that adjusts to different screen sizes. We are also using the assets from the assets folder to display the hero image.
+
 import React from 'react'
 import { assets } from '../assets/assets';
 

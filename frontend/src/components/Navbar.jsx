@@ -1,7 +1,9 @@
+// navbar is the component that is responsible for the navigation bar of the website. It contains the logo, the navigation links, and the icons for search, profile, and cart. It also contains a menu icon for mobile screens that opens a sidebar menu when clicked. The sidebar menu contains the same navigation links as the main navigation bar.
+
 import React, { useState } from 'react'
 import {assets} from '../assets/assets.js'
 import { Link, NavLink } from 'react-router-dom'
-
+ 
 const Navbar = () => {
 
   const [visible, setVisible] = useState(false);
@@ -9,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
 
-      <img src = {assets.logo} className='w-36' alt = ""/>
+      <Link to='/'><img src = {assets.logo} className='w-36' alt = ""/></Link>
         <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
 
             <NavLink to = "/" className='flex flex-col items-center gap-1'>
