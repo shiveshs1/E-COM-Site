@@ -49,6 +49,7 @@ function Collection() {
       // It's done so the original products array stays untouched when you filter/sort it. You work on the copy, not the original.
 
     // query for search bar to search products:
+    // if 'showSearch' is "true" and 'search' has any text in it, it will run
     if (showSearch && search) {
       productsCopy = productsCopy.filter(item => item.name.toLowerCase().includes(search.toLowerCase()))
     }
